@@ -102,6 +102,7 @@ export function searchSwag( category ) {
 }
 
 export function addToCart( id ) {
+  console.log(URL)
   return {
     type: ADD_TO_CART,
     payload: axios.post( `${URL.cart}?id=${id}` ).then( response => response.data )
